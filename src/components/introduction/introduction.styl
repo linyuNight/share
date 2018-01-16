@@ -1,0 +1,77 @@
+@import "~common/stylus/mixin"
+
+.introduction{
+  position:absolute; 
+  width:100%;
+  z-index:200;
+  background:#f2f2f2;
+  .introduction-list{
+  	width:100%;
+  	padding:10px 15px 15px;
+  	.introduction-item{
+  		width:100%;
+  		margin-bottom:10px;
+      .introduction-item-top{
+      	width:100%;
+      	line-height:35px;
+      	color:#000;
+      	.introduction-item-top-left{
+      		font-size:19px;
+      		font-weight:bold;
+      	}
+      	.introduction-item-top-right{
+      		font-size:16px;
+      		font-weight:bold;
+      	}
+      }
+      .introduction-item-bottom{
+      	padding:15px;
+      	font-size:13px;
+      	color:#333333;
+      	line-height:20px;
+      	background:#fff;
+      	border-radius:3px;
+      	.step-list{
+      		width:100%;
+      		.step-item{
+      			width:100%;
+      			margin-bottom:20px;
+      			.step-item-left{
+      				float:left;
+      				width:54px;
+      				height:25px;
+      				bg('../../common/image/rule/step-bg.png');
+      				.step-item-left-text{
+      					width:51px;
+      					height:25px;
+      					line-height:25px;
+      					font-size:13px;
+      					color:#000;
+      					text-align:center;
+      				}
+      			}
+      			.step-item-right{
+      				float:right;
+      				width:calc(100% - 70px);
+      				margin-top:-4px;
+      				.erweima{
+      					width:100px;
+      				}
+      			}
+      		}
+      	}
+      }
+  	}
+  }
+  .bottom-btn{
+  	margin:0 auto 25px;
+  	width:180px;
+  	height:40px;
+  	background:$red;
+  	color:#fff;
+  	font-size:16px;
+  	text-align:center;
+  	line-height:40px;
+  	border-radius:3px;
+  }
+}
